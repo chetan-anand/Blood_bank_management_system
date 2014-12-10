@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 3, from LayoutIt!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h3><b>User Queries</b></h3>
+			<hr>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<div class="form-group">
+					 <label for="d_name">Donor Name</label><input type="text" class="form-control" id="d_name">
+					</div>
+				</div>
+
+				<div class="col-md-4 column">
+					<div class="form-group">
+						 <label for="d_area">Area</label><br>
+						 <select id="city" name="city" class="formation_select required" style="width: 230px;"><option value="">- select -</option><option value="1">Bagalkot</option>
+							<option value="2">Bangalore</option>
+							<option value="3">Bangalore Rural</option>
+							<option value="4">Belgaum</option>
+							<option value="5">Bellary</option>
+							<option value="6">Bidar</option>
+							<option value="7">Bijapur</option>
+							<option value="8">Chamrajnagar</option>
+							<option value="9">Chickmagalur</option>
+							<option value="10">Chikkaballapur</option>
+							<option value="11">Chitradurga</option>
+							<option value="12">Dakshina Kannada</option>
+							<option value="13">Davangare</option>
+							<option value="14">Dharward</option>
+							<option value="15">Gadag</option>
+							<option value="16">Gulbarga</option>
+							<option value="17">Hassan</option>
+							<option value="18">Haveri</option>
+							<option value="19">Kodagu</option>
+							<option value="20">Kolar</option>
+							<option value="21">Koppal</option>
+							<option value="22">Mandya</option>
+							<option value="23">Mysore</option>
+							<option value="24">Raichur</option>
+							<option value="25">Ramanagar</option>
+							<option value="26">Shimoga</option>
+							<option value="27">Tumkur</option>
+							<option value="28">Udupi</option>
+							<option value="29">Uttara Kannada</option>
+							<option value="30">Yadgir</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+						<label for="d_area">Blood Group</label><br>
+						 <select id="bg" name="bg" class="formation_select required"><option value="">- select -</option><option value="1">A+</option>
+							<option value="2">A-</option>
+							<option value="3">A1+</option>
+							<option value="4">A1-</option>
+							<option value="7">A1B+</option>
+							<option value="8">A1B-</option>
+							<option value="5">A2+</option>
+							<option value="6">A2-</option>
+							<option value="9">A2B+</option>
+							<option value="10">A2B-</option>
+							<option value="11">AB+</option>
+							<option value="12">AB-</option>
+							<option value="13">B+</option>
+							<option value="14">B-</option>
+							<option value="17">Bombay</option>
+							<option value="15">O+</option>
+							<option value="16">O-</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<div class="form-group">
+									 <label for="d_nationality">National Id</label><input type="text" class="form-control" id="d_nationality">
+								</div>
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+									 <label for="d_phone">Phone Number</label><input type="text" class="form-control" id="d_phone">
+								</div>
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+									 <label for="d_email">Email</label><input type="email" class="form-control" id="d_email">
+								</div>
+				</div>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Product
+						</th>
+						<th>
+							Payment Taken
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Default
+						</td>
+					</tr>
+					<tr class="active">
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Approved
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Declined
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							3
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Pending
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>
+							4
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Call in to confirm
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<br>
+			<h3><b>Blood Repo Queries</b></h3>
+			<hr>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<div class="form-group">
+						<label for="brq_bg">Blood Group</label><br>
+						 <select id="brq_bg" name="brq_bg" class="formation_select required"><option value="">- select -</option><option value="1">A+</option>
+							<option value="2">A-</option>
+							<option value="3">A1+</option>
+							<option value="4">A1-</option>
+							<option value="7">A1B+</option>
+							<option value="8">A1B-</option>
+							<option value="5">A2+</option>
+							<option value="6">A2-</option>
+							<option value="9">A2B+</option>
+							<option value="10">A2B-</option>
+							<option value="11">AB+</option>
+							<option value="12">AB-</option>
+							<option value="13">B+</option>
+							<option value="14">B-</option>
+							<option value="17">Bombay</option>
+							<option value="15">O+</option>
+							<option value="16">O-</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+						<label for="brq_dc">Donor Confirmed</label><br>
+						 <select id="brq_dc" name="brq_dc" class="formation_select required"><option value="">- select -</option><option value="1">Confirmed</option>
+							<option value="2">Not Confirmed</option>
+							
+						</select>
+					</div>
+
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+						<label for="brq_rc">Request Confirmed</label><br>
+						 <select id="brq_rc" name="brq_rc" class="formation_select required"><option value="">- select -</option><option value="1">Confirmed</option>
+							<option value="2">Not Confirmed</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<div class="form-group">
+						<label for="brq_con">Blood Condition</label><br>
+						 <select id="brq_con" name="brq_con" class="formation_select required"><option value="">- select -</option><option value="1">Usable</option>
+							<option value="2">Not Usable</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4 column">
+					<h3> If you can handle date</h3>
+				</div>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Product
+						</th>
+						<th>
+							Payment Taken
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Default
+						</td>
+					</tr>
+					<tr class="active">
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Approved
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Declined
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							3
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Pending
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>
+							4
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Call in to confirm
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<br>
+			<h3><b>Branch Queries</b></h3>
+			<hr>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<div class="form-group">
+									 <label for="br_name">Branch Name</label><input type="text" class="form-control" id="br_name">
+								</div>
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+						<label for="br_area">Area</label><br>
+							 <select id="city" name="city" class="formation_select required" style="width: 230px;"><option value="">- select -</option><option value="1">Bagalkot</option>
+								<option value="2">Bangalore</option>
+								<option value="3">Bangalore Rural</option>
+								<option value="4">Belgaum</option>
+								<option value="5">Bellary</option>
+								<option value="6">Bidar</option>
+								<option value="7">Bijapur</option>
+								<option value="8">Chamrajnagar</option>
+								<option value="9">Chickmagalur</option>
+								<option value="10">Chikkaballapur</option>
+								<option value="11">Chitradurga</option>
+								<option value="12">Dakshina Kannada</option>
+								<option value="13">Davangare</option>
+								<option value="14">Dharward</option>
+								<option value="15">Gadag</option>
+								<option value="16">Gulbarga</option>
+								<option value="17">Hassan</option>
+								<option value="18">Haveri</option>
+								<option value="19">Kodagu</option>
+								<option value="20">Kolar</option>
+								<option value="21">Koppal</option>
+								<option value="22">Mandya</option>
+								<option value="23">Mysore</option>
+								<option value="24">Raichur</option>
+								<option value="25">Ramanagar</option>
+								<option value="26">Shimoga</option>
+								<option value="27">Tumkur</option>
+								<option value="28">Udupi</option>
+								<option value="29">Uttara Kannada</option>
+								<option value="30">Yadgir</option>
+							</select>
+						</div>
+				</div>
+				<div class="col-md-4 column">
+					<div class="form-group">
+						 <label for="br_phone">Phone Number</label><input type="text" class="form-control" id="br_phone">
+					</div>
+				</div>
+			</div>
+		<!--	<div class="row clearfix">
+				<div class="col-md-4 column">
+				</div>
+				<div class="col-md-4 column">
+				</div>
+				<div class="col-md-4 column">
+				</div>
+			</div>-->
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Product
+						</th>
+						<th>
+							Payment Taken
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Default
+						</td>
+					</tr>
+					<tr class="active">
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Approved
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Declined
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							3
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Pending
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>
+							4
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Call in to confirm
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<br>
+			<h3><b>Branch Wise Blood Repo</b></h3>
+			<hr>
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					<div class="form-group">
+						 <label for="wbr_area">Branch Area</label><input type="text" class="form-control" id="wbr_area">
+					</div>
+				</div>
+				<div class="col-md-6 column">
+					<div class="form-group">
+						<label for="wbr_bg">Blood Group</label><br>
+						 <select id="wbr_bg" name="wbr_bg" class="formation_select required"><option value="">- select -</option><option value="1">A+</option>
+							<option value="2">A-</option>
+							<option value="3">A1+</option>
+							<option value="4">A1-</option>
+							<option value="7">A1B+</option>
+							<option value="8">A1B-</option>
+							<option value="5">A2+</option>
+							<option value="6">A2-</option>
+							<option value="9">A2B+</option>
+							<option value="10">A2B-</option>
+							<option value="11">AB+</option>
+							<option value="12">AB-</option>
+							<option value="13">B+</option>
+							<option value="14">B-</option>
+							<option value="17">Bombay</option>
+							<option value="15">O+</option>
+							<option value="16">O-</option>
+						</select>
+					</div>
+				</div>
+				
+			</div>
+			
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Product
+						</th>
+						<th>
+							Payment Taken
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Default
+						</td>
+					</tr>
+					<tr class="active">
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Approved
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Declined
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							3
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Pending
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>
+							4
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Call in to confirm
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>
