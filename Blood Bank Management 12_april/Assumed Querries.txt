@@ -1,0 +1,37 @@
+Wiki (blood bank)
+------------------------------------------------------------------------
+A blood bank is a cache or bank of blood or blood components, gathered as a result of blood donation or collection, stored and preserved for later use in blood transfusion. 
+The term "blood bank" typically refers to a division of a hospital where the storage of blood product occurs and where proper testing is performed
+
+Different Assumed Queries:-
+--------------------------------------------------------------------------
+Donor
+Find d_name,blood_group,phone via sub_area
+Update donor details
+Etc
+
+
+Branch
+Find branch_name,address phone via area
+
+
+Blood_Request
+Find Name,address,hospital,blood_group,blood_amount,phone via branch_id
+Find Name,hospital,blood_group,blood_amount,delivery_confirmation via branch_id
+Etc.
+
+
+Blood
+Find donor_id,blood_amount via branch_id
+Update donor_id,blood_amount via branch_id
+Find Total_blood_amount_in_branch via branch_id
+Find donor_id,paid_amount,blood_amount via branch_id
+
+
+Employee
+Find emp_id,emp_name,emp_address_emp_role,emp_sal,phone,email via branch_id
+Find emp_id,emp_name, emp_role,emp_sal,phone via branch_id
+Find emp_id,emp_name, emp_role,emp_sal via branch_id
+Find emp_id, emp_sal, via branch_id
+Update emp_id,emp_name,emp_address_emp_role,emp_sal,phone via branch_id
+Etc.
